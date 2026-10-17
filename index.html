@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f1ea" />
+    <title>Hello, world!</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+        background: #fff1a8;
+        color: #183b36;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(100%, 760px);
+        min-height: 430px;
+        display: grid;
+        place-items: center;
+        padding: 48px 24px;
+        text-align: center;
+        background: #fffdf8;
+        border: 1px solid #e5e1d6;
+        border-radius: 28px;
+        box-shadow: 0 24px 70px rgb(24 59 54 / 9%);
+      }
+
+      .content { max-width: 520px; }
+
+      .board-image {
+        display: block;
+        width: min(100%, 420px);
+        height: auto;
+        margin: 30px auto 0;
+        border: 1px solid #e5e1d6;
+        border-radius: 14px;
+        box-shadow: 0 12px 32px rgb(24 59 54 / 12%);
+      }
+
+      .spark {
+        width: 58px;
+        height: 58px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 26px;
+        border-radius: 50%;
+        background: #d9eee4;
+        color: #276654;
+        font-size: 28px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3rem, 10vw, 5.5rem);
+        line-height: 1;
+        letter-spacing: -0.075em;
+        font-weight: 650;
+      }
+
+      p {
+        margin: 20px 0 0;
+        color: #60736d;
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 480px) {
+        main { min-height: 360px; border-radius: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="spark" aria-hidden="true">✳</div>
+        <h1>Hello, world!</h1>
+        <p>A little corner of the internet, starting with a hello.</p>
+        <img class="board-image" src="images/sorry-board.png" alt="A colorful Sorry! board game with red, blue, yellow, and green player zones" />
+      </div>
+    </main>
+  </body>
+</html>
